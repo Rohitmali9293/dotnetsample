@@ -1,10 +1,11 @@
+#!/usr/bin/env groovy
 pipeline {
     agent any
     stages {
         stage('Clean') {
             steps {
                 script{
-                    git branch: main, url: 'https://github.com/Rohitmali9293/dotnetsample.git'
+                    sh "pwd"
                     //modules.msbuild = load "./msbuild.groovy"
                     //modules.msbuild.CleanWorkspace()
                     //echo "workspace cleanup"
