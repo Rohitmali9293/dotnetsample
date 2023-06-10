@@ -5,7 +5,7 @@ pipeline {
         stage('Clean') {
             steps {
                 script{
-                    bat "msbuild.exe ./ConsoleApp.sln" /nologo /nr:false /p:configuration=\"release\" /t:clean
+                    bat "msbuild.exe ./ConsoleApp.sln"
                     //modules.msbuild = load "./msbuild.groovy"
                     //modules.msbuild.CleanWorkspace()
                     //echo "workspace cleanup"
