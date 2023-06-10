@@ -1,3 +1,4 @@
+def CleanWorkspace []
 
 pipeline {
     agent any
