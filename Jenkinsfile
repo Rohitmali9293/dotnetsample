@@ -1,14 +1,11 @@
 #!/usr/bin/env groovy
 pipeline {
     agent any
-    node {
-        def msbuild = tool name: 'MSBuild', type: 'hudson.plugins.msbuild.MsBuildInstallation'
-
     stages {
         stage('Clean') {
             steps {
                 script{
-                    git branch: main, url: 'https://github.com/Rohitmali9293/dotnetsample.git'
+                    echo "hello"
                     //modules.msbuild = load "./msbuild.groovy"
                     //modules.msbuild.CleanWorkspace()
                     //echo "workspace cleanup"
@@ -45,5 +42,4 @@ pipeline {
             }
         }
     }
-}
 }
