@@ -8,7 +8,6 @@ pipeline {
                     //modules.msbuild = load "./msbuild.groovy"
                     //modules.msbuild.CleanWorkspace()
                     //echo "workspace cleanup"
-                }
             }
         }
         stage('GitCheckout SCM') {
