@@ -12,11 +12,7 @@ pipeline {
         }
         stage('GitCheckout SCM') {
             steps {
-                script{
-                    modules.msbuild = load "./msbuild.groovy"
-                    modules.msbuild.GitCheckout()
-                    echo "Git checkout for source code"
-                }
+                bat 'nuget restore ConsoleApp.sln'
             }
         }
         stage('RestorePackages and CleanBuild') {
