@@ -4,7 +4,7 @@ pipeline {
         stage('Clean') {
             steps {
                 script{
-                    cleanWs()
+                    git branch: main, url: 'https://github.com/Rohitmali9293/dotnetsample.git'
                     //modules.msbuild = load "./msbuild.groovy"
                     //modules.msbuild.CleanWorkspace()
                     //echo "workspace cleanup"
