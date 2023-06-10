@@ -4,9 +4,10 @@ pipeline {
         stage('Clean') {
             steps {
                 script{
-                    modules.msbuild = load "./msbuild.groovy"
-                    modules.msbuild.CleanWorkspace()
-                    echo "workspace cleanup"
+                    cleanWs()
+                    //modules.msbuild = load "./msbuild.groovy"
+                    //modules.msbuild.CleanWorkspace()
+                    //echo "workspace cleanup"
                 }
             }
         }
