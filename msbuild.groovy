@@ -1,3 +1,5 @@
+def CleanWorkspace []
+
 //workspace cleanup plugin required for this step
 def CleanWorkspace() {
     cleanWs()
