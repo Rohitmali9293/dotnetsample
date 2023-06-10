@@ -12,7 +12,7 @@ pipeline {
         }
         stage('GitCheckout SCM') {
             steps {
-                bat 'nuget restore ConsoleApp.sln'
+                bat 'msbuild ConsoleApp.sln /p:Configuration=Release'
             }
         }
         stage('RestorePackages and CleanBuild') {
