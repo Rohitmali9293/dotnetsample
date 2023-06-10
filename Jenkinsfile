@@ -1,5 +1,3 @@
-def CleanWorkspace []
-
 pipeline {
     agent any
     stages {
